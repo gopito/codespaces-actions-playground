@@ -11,4 +11,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Add Label to pull-requests
-    - uses: actions/labeler@v4
+      uses: actions/labeler@v4
