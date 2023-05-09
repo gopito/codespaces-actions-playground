@@ -1,6 +1,7 @@
-name: "Pull Request Labeler"
+name: Pull Request Labeler
+
 on:
-  pull-requests:
+  pull_requests:
       branches: ["production"]
 jobs:
   triage:
@@ -9,4 +10,5 @@ jobs:
       pull-requests: write
     runs-on: ubuntu-latest
     steps:
+    - name: Add Label to pull-requests
     - uses: actions/labeler@v4
